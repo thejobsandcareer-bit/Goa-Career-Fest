@@ -35,7 +35,13 @@ const App: React.FC = () => {
     const el = document.getElementById('survey-form');
     el?.scrollIntoView({ behavior: 'smooth' });
   };
-
+return (
+  <div className="min-h-screen flex flex-col font-sans bg-gray-50 relative pb-10">
+    <h1 style={{color: 'red', fontSize: '50px', zIndex: 9999, position: 'relative'}}>
+      TEST: CAN YOU SEE ME?
+    </h1>
+    <Header />
+    ...
   return (
     <div className="min-h-screen flex flex-col font-sans bg-gray-50 relative pb-10">
       <Header />
