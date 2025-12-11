@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Goa Career Fest 2026 — Create Your Profile</title>
+    <meta
+      name="description"
+      content="Create your Goa Career Fest 2026 profile in 45 seconds. Get free job alerts, resume tips, and priority access to Goa employers from The Jobs & Career (TJC)."
+    />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://goacareerfest.com/" />
+    <meta property="og:title" content="Goa Career Fest 2026 — Still Searching for a Job?" />
+    <meta property="og:description" content="Create your profile in 45 seconds. Get free job alerts and priority access to Goa employers." />
+    <meta property="og:image" content="https://picsum.photos/1200/630" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://goacareerfest.com/" />
+    <meta property="twitter:title" content="Goa Career Fest 2026 — Still Searching for a Job?" />
+    <meta property="twitter:description" content="Create your profile in 45 seconds. Get free job alerts and priority access to Goa employers." />
+    <meta property="twitter:image" content="https://picsum.photos/1200/630" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              tjc: {
+                blue: '#040084',
+                orange: '#ff6100',
+                black: '#111111',
+                dark: '#1a1a1a',
+                gray: '#f4f4f4'
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              poppins: ['Poppins', 'sans-serif'],
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.3s ease-in-out',
+              'fade-in-up': 'fadeInUp 0.5s ease-out forwards',
+              'float': 'float 6s ease-in-out infinite',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-10px)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+      body { font-family: 'Inter', sans-serif; }
+      h1, h2, h3, h4, .font-poppins { font-family: 'Poppins', sans-serif; }
+      /* Custom scrollbar for form */
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+      
+      .pattern-grid {
+        background-image: radial-gradient(#ff6100 1px, transparent 1px);
+        background-size: 20px 20px;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.1/",
+    "react": "https://esm.sh/react@^19.2.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.1/"
+  }
+}
+</script>
+</head>
+  <body class="bg-gray-50 text-tjc-black antialiased">
+    <div id="root"></div>
+  </body>
+</html>

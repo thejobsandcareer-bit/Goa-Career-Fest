@@ -1,11 +1,31 @@
-<div align="center">
+# Goa Job Fest 2026 Landing Page
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+## Setup
 
-  <h1>Built with AI Studio</h2>
+1.  **Google Apps Script (Backend)**
+    *   Create a new Google Sheet.
+    *   Open `Extensions > Apps Script`.
+    *   Copy the content of `google-apps-script.js` into the script editor.
+    *   Run the `setup()` function once to create headers.
+    *   Click **Deploy > New Deployment**.
+    *   Select **Type: Web App**.
+    *   Set **Execute as: Me**.
+    *   Set **Who has access: Anyone** (Important for the fetch to work).
+    *   Copy the generated **Web App URL**.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+2.  **Frontend Configuration**
+    *   Open `constants.ts`.
+    *   Replace `YOUR_WEB_APP_URL_HERE` with the URL copied in step 1.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+3.  **Analytics**
+    *   Open `index.html` and uncomment the GA4 and Meta Pixel sections, replacing placeholders with your actual IDs.
 
-</div>
+## Development
+
+*   `npm install`
+*   `npm start`
+
+## Branding
+
+*   Color: TJC Orange (`#ff6100`) is defined in `index.html` (Tailwind config).
+*   Logo: Edit `components/Header.tsx` to add an image logo if needed.
