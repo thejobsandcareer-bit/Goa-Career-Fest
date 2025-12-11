@@ -1,7 +1,7 @@
 
 // REPLACE THIS URL WITH YOUR GOOGLE APPS SCRIPT WEB APP URL
 // If left as default, the app will run in DEMO MODE (simulating success).
-export const GOOGLE_APPS_SCRIPT_URL = "YOUR_WEB_APP_URL_HERE"; 
+export const GOOGLE_APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx323aYK-wEI1pJ8hc1wjXbmXFDm9imKrhzU8UW7n_NM7It70EY0YwDiyLvHtQbEA5z/exec"; 
 
 export const AGE_GROUPS = ["19–24", "25–34", "35–44", "45+"];
 
